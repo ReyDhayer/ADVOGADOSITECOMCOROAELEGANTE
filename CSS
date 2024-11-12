@@ -1,0 +1,230 @@
+/* Estilos Gerais */
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Petit Formal Script", cursive;
+}
+
+.petit-formal-script-regular {
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Navegação */
+.navbar {
+  background-color: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.navbar a:hover {
+  color: #ff6b6b;
+}
+
+/* Seções */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.section-background {
+  background-image: url('fundo.jpg');
+  /* Imagem de fundo para a seção */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.section-about {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.section-services {
+  background-color: #e6e6e6;
+  color: #333;
+}
+
+.section-team {
+  background-color: #cccccc;
+  color: #333;
+}
+
+.section-contact {
+  background-color: #bfbfbf;
+  color: #333;
+}
+
+/* Cards Flutuantes */
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.floating-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card-text h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.card-text p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.content-background {
+  background: url(Leonardo_Phoenix_A_luxurious_modern_and_elegant_scene_featurin_0.jpg);
+
+}
+
+.header-left {
+  top: -50px;
+  position: relative;
+}
+
+.header-right {
+  position: relative;
+  top: -70px;
+  left: 17px;
+}
+
+.card-body {
+  width: 290px;
+  padding: 2px;
+  
+}
+
+.card {
+  border: 3px solid #ffd277;  /* Contorno dourado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Sombrinha suave */
+  overflow: hidden;
+  width: 18rem;
+  background: linear-gradient(to right, #201501, #3d2902, #77530a, #77530a, #ffd277, #77530a);
+  /* Adiciona um contorno dourado ao redor dos cards */
+  border-radius: 10px;
+  /* Deixa o contorno com bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Adiciona uma leve sombra para destaque */
+  overflow: hidden;
+  /* Garante que a imagem fique dentro dos limites do card */
+  transition: transform 0.3s ease;
+  /* Animação suave ao passar o mouse */
+  background-position: left;
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+  left: 50px;
+  align-items: center;
+  text-decoration: white;
+  
+}
+
+.card {
+  
+}
+
+.card:hover {
+  transform: scale(1.05);
+  /* Aumenta levemente o card ao passar o mouse */
+}
+
+/* From Uiverse.io by aasisodiya */
+/* From Uiverse.io by vinodjangid07 */
+.Btn {
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+  left: 50px;
+  align-items: center;
+}
+
+.Btn::before {
+  position: absolute;
+  content: "Saiba Mais";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+
+.Btn:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:active {
+  transform: scale(0.95);
+}
+.IMAGEMCOROA{
+position: relative;
+top: -790px;
+list-style-image: inherit;
+
+}
