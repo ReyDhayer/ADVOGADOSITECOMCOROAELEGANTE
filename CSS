@@ -1,12 +1,10 @@
-/* Estilos Gerais */
 @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Petit Formal Script", cursive;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Petit Formal Script", cursive;
 }
 
 .petit-formal-script-regular {
@@ -47,32 +45,37 @@ section {
   text-align: center;
 }
 
-.section-background {
-  background-image: url('fundo.jpg');
-  /* Imagem de fundo para a seção */
+.content-background {
+  background-image: url('Leonardo_Phoenix_A_luxurious_modern_and_elegant_scene_featurin_0.jpg');
   background-size: cover;
   background-position: center;
   color: white;
+ 
 }
 
-.section-about {
-  background-color: #f2f2f2;
-  color: #333;
+.section-2 {
+  background-image: url('freepik-export-20240605125401oovj-scaled.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 400px 20px;
+
 }
 
-.section-services {
-  background-color: #e6e6e6;
-  color: #333;
+.section-3 {
+  background-image: url('outra-imagem.jpeg'); /* Substitua pelo caminho da imagem desejada */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
 }
 
-.section-team {
-  background-color: #cccccc;
-  color: #333;
-}
-
-.section-contact {
-  background-color: #bfbfbf;
-  color: #333;
+.section-4 {
+  background-image: url('outra-imagem-2.jpeg'); /* Substitua pelo caminho da imagem desejada */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
 }
 
 /* Cards Flutuantes */
@@ -84,87 +87,20 @@ section {
   margin: 0 auto;
 }
 
-.floating-card {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  max-width: 300px;
-  text-align: center;
-}
-
-.card-image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.card-text h3 {
-  font-size: 1.2rem;
-  margin: 10px 0;
-  color: #333;
-}
-
-.card-text p {
-  font-size: 1rem;
-  color: #555;
-}
-
-.content-background {
-  background: url(Leonardo_Phoenix_A_luxurious_modern_and_elegant_scene_featurin_0.jpg);
-
-}
-
-.header-left {
-  top: -50px;
-  position: relative;
-}
-
-.header-right {
-  position: relative;
-  top: -70px;
-  left: 17px;
-}
-
-.card-body {
-  width: 290px;
-  padding: 2px;
-  
-}
-
 .card {
-  border: 3px solid #ffd277;  /* Contorno dourado */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Sombrinha suave */
+  border: 3px solid #ffd277; /* Contorno dourado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombrinha suave */
   overflow: hidden;
   width: 18rem;
-  background: linear-gradient(to right, #201501, #3d2902, #77530a, #77530a, #ffd277, #77530a);
-  /* Adiciona um contorno dourado ao redor dos cards */
+  background: linear-gradient(to right, #3d2a00, #6b4b00, #d4af37, #d4af37, #e6c200, #6b4b00);
   border-radius: 10px;
-  /* Deixa o contorno com bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  /* Adiciona uma leve sombra para destaque */
-  overflow: hidden;
-  /* Garante que a imagem fique dentro dos limites do card */
-  transition: transform 0.3s ease;
-  /* Animação suave ao passar o mouse */
-  background-position: left;
   color: #ffffff;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition-duration: 1s;
-  overflow: hidden;
-  left: 50px;
-  align-items: center;
-  text-decoration: white;
-  
-}
-
-.card {
-  
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
@@ -172,59 +108,141 @@ section {
   /* Aumenta levemente o card ao passar o mouse */
 }
 
-/* From Uiverse.io by aasisodiya */
-/* From Uiverse.io by vinodjangid07 */
+.card-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-img-top {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Botão Customizado */
 .Btn {
   width: 140px;
   height: 40px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+  background: linear-gradient(45deg, #e6c200, #f2d184, #d4af37, #d4af37, #f2d184, #d4af37);
+  background-size: 200% 200%;
+  animation: gradientShift 4s ease infinite;
+  color: white;
+  font-weight: bold;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.Btn:hover {
+  background: linear-gradient(45deg, #d4af37, #e6c200, #f2d184);
   background-size: 250%;
   background-position: left;
   color: #ffd277;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
   transition-duration: 1s;
-  overflow: hidden;
-  left: 50px;
-  align-items: center;
 }
 
-.Btn::before {
-  position: absolute;
-  content: "Saiba Mais";
+/* Efeito de vidro no footer */
+.footer-image {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-image p a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-image p a:hover {
   color: #ffd277;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 97%;
-  height: 90%;
-  border-radius: 8px;
-  transition-duration: 1s;
-  background-color: rgba(0, 0, 0, 0.842);
-  background-size: 200%;
 }
 
-.Btn:hover {
-  background-position: right;
-  transition-duration: 1s;
+/* Elementos extras para estilo */
+.IMG {
+  position: relative;
+  top: -790px;
+  left: 440px;
 }
 
-.Btn:hover::before {
-  background-position: right;
-  transition-duration: 1s;
+.IMAGEMCOROA2 {
+  position: relative;
+  top: -790px;
+  left: 520px;
 }
 
-.Btn:active {
-  transform: scale(0.95);
+.IMG2 {
+  position: relative;
+  left: -539px;
 }
-.IMAGEMCOROA{
-position: relative;
-top: -790px;
-list-style-image: inherit;
+.header-right{
+  top: -104px;
+  position: relative;
+}
+html,
+body {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: navajowhite;
+}
 
+.box {
+	display: flex;
+}
+
+.box .inner {
+	width: 400px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+	background-color: indianred;
+	color: darkred;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	background-color: lightcoral;
+	color: antiquewhite;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
 }
